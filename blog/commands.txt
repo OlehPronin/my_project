@@ -1,0 +1,45 @@
+# Создаем файл commands.txt и записываем команды
+echo "# Создание нового проекта и подключение Git" > commands.txt
+echo "mkdir my_project" >> commands.txt
+echo "cd my_project" >> commands.txt
+echo "git init" >> commands.txt
+echo "" >> commands.txt
+
+echo "# Создание файла .gitignore и добавление правил" >> commands.txt
+echo "touch .gitignore" >> commands.txt
+echo "echo \"*.sass\" >> .gitignore" >> commands.txt
+echo "echo \"/bin/\" >> .gitignore" >> commands.txt
+echo "echo \"/admin/\" >> .gitignore" >> commands.txt
+echo "echo \"/config/\" >> .gitignore" >> commands.txt
+echo "" >> commands.txt
+
+echo "# Добавление всех файлов в локальное хранилище" >> commands.txt
+echo "git add ." >> commands.txt
+echo "git commit -m \"Initial commit\"" >> commands.txt
+echo "" >> commands.txt
+
+echo "# Создание основной ветки (если не существует) и переход в неё" >> commands.txt
+echo "git branch -M main" >> commands.txt
+echo "" >> commands.txt
+
+echo "# Создание новой ветки и переход в неё" >> commands.txt
+echo "git branch new_branch" >> commands.txt
+echo "git checkout new_branch" >> commands.txt
+echo "" >> commands.txt
+
+echo "# Создание папки blog с файлами index.js и index.html" >> commands.txt
+echo "mkdir blog" >> commands.txt
+echo "touch blog/index.js" >> commands.txt
+echo "touch blog/index.html" >> commands.txt
+echo "" >> commands.txt
+
+echo "# Возвращение в основную ветку" >> commands.txt
+echo "git checkout main" >> commands.txt
+echo "" >> commands.txt
+
+echo "# Добавление удаленного репозитория (замените URL на ваш репозиторий)" >> commands.txt
+echo "git remote add origin https://github.com/OlehPronin/my_project.git" >> commands.txt
+echo "" >> commands.txt
+
+echo "# Загрузка основной ветки на удаленный репозиторий" >> commands.txt
+echo "git push -u origin main" >> commands.txt
