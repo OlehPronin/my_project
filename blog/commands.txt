@@ -37,7 +37,7 @@ echo "# Возвращение в основную ветку" >> commands.txt
 echo "git checkout main" >> commands.txt
 echo "" >> commands.txt
 
-echo "# Добавление удаленного репозитория (замените URL на ваш репозиторий)" >> commands.txt
+echo "# Добавление удаленного репозитория " >> commands.txt
 echo "git remote add origin https://github.com/OlehPronin/my_project.git" >> commands.txt
 echo "" >> commands.txt
 
